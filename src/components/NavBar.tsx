@@ -10,5 +10,5 @@ const NavBar = () => {
     </HStack>
   )
 }
-
+ 
 export default NavBar
