@@ -1,6 +1,5 @@
 import { GameQuery } from "../App";
 import useData from "./useData";
-import { Genre } from "./useGenres";
 
 export interface Platform {
   id: number;
@@ -27,7 +26,7 @@ const useGames = (
         platforms: gameQuery.platform?.id,
       },
     },
-    [gameQuery.genre?.id, gameQuery.platform?.id]
+    [gameQuery]
   );
 
 export default useGames;
