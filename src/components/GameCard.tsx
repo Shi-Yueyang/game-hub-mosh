@@ -10,8 +10,8 @@ const GameCard = ({ game }: Props) => {
     <Card  >
       <Image src={game.background_image} />
       <CardBody>
-        <Heading fontSize={"2xl"}>{game.name}</Heading>
         <PlatformIconList platforms={game.parent_platforms.map(uglyPlatform=>uglyPlatform.platform)}></PlatformIconList>
+        <Heading fontSize={"2xl"}>{game.name}</Heading>
       </CardBody>
     </Card>
   );
